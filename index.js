@@ -109,6 +109,17 @@ async function run() {
 
 
         // bidsCollection
+        // get :: (my-bids, user based)
+        app.get("/api/v1/my-bids", async (req, res) => {
+            let query = {}
+            if (req.query.email) {
+                query = { email: req.query.email }
+            }
+            const result = await bidsCollection.find(query).toArray()
+            res.send(result)
+        })
+
+
         // post :: (bid-on-the-project)
         app.post("/api/v1/bid-on-the-project", async (req, res) => {
             const bidOnTheProject = req.body
