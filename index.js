@@ -60,6 +60,17 @@ async function run() {
         })
 
 
+        // get :: (my-posted-job, user based )
+        app.get("/api/v1/my-posted-jobs", async (req, res) => {
+            let query = {}
+            if (req.query.email) {
+                query = { email: req.query.email }
+            }
+            const result = await jobCollection.find(query).toArray()
+            res.send(result)
+        })
+
+
         // post :: (add-job)
         app.post("/api/v1/add-job", async (req, res) => {
             const addJob = req.body
