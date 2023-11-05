@@ -79,6 +79,26 @@ async function run() {
         })
 
 
+        // patch :: (update-posted-job)
+        app.patch("/api/v1/:postedJobId/update-posted-job", async (req, res) => {
+            const postedJobId = req.params.postedJobId
+            const query = { _id: new ObjectId(postedJobId) }
+            const updatePostedJob = req.body
+            const postedJob = {
+                $set: {
+                    jobTitle: updatePostedJob.jobTitle,
+                    deadline: updatePostedJob.deadline,
+                    description: updatePostedJob.description,
+                    category: updatePostedJob.category,
+                    minimumPrice: updatePostedJob.minimumPrice,
+                    maximumPrice: updatePostedJob.maximumPrice
+                }
+            }
+            const result = await jobCollection.updateOne(query, postedJob)
+            res.send(result)
+        })
+
+
         // Send a ping to confirm a successful connection
         client.db("admin").command({ ping: 1 });
         console.log("Pinged your deployment. You successfully connected to MongoDB!");
