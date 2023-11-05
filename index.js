@@ -36,7 +36,7 @@ async function run() {
         // database collection
         const database = client.db("gigGrowDB")
         const jobCollection = database.collection("jobCollection")
-
+        const bidsCollection = database.collection("bidsCollection")
 
 
         // jobCollection
@@ -104,6 +104,15 @@ async function run() {
             const postedJobId = req.params.postedJobId
             const query = { _id: new ObjectId(postedJobId) }
             const result = await jobCollection.deleteOne(query)
+            res.send(result)
+        })
+
+
+        // bidsCollection
+        // post :: (bid-on-the-project)
+        app.post("/api/v1/bid-on-the-project", async (req, res) => {
+            const bidOnTheProject = req.body
+            const result = await bidsCollection.insertOne(bidOnTheProject)
             res.send(result)
         })
 
