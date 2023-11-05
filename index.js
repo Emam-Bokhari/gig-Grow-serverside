@@ -40,6 +40,17 @@ async function run() {
 
 
         // jobCollection
+        // get :: (specefic job category)
+        app.get("/api/v1/job-category", async (req, res) => {
+            let query = {}
+            if (req.query.category) {
+                query = { category: req.query.category }
+            }
+            const result = await jobCollection.find(query).toArray()
+            res.send(result)
+        })
+
+
         // post :: (add-job)
         app.post("/api/v1/add-job", async (req, res) => {
             const addJob = req.body
