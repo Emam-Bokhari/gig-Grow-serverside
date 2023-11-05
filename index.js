@@ -99,6 +99,15 @@ async function run() {
         })
 
 
+        // delete :: (delete-posted-job)
+        app.delete("/api/v1/:postedJobId/delete-posted-job", async (req, res) => {
+            const postedJobId = req.params.postedJobId
+            const query = { _id: new ObjectId(postedJobId) }
+            const result = await jobCollection.deleteOne(query)
+            res.send(result)
+        })
+
+
         // Send a ping to confirm a successful connection
         client.db("admin").command({ ping: 1 });
         console.log("Pinged your deployment. You successfully connected to MongoDB!");
