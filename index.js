@@ -40,7 +40,12 @@ async function run() {
 
 
         // jobCollection
-       
+        // post :: (add-job)
+        app.post("/api/v1/add-job", async (req, res) => {
+            const addJob = req.body
+            const result = await jobCollection.insertOne(addJob)
+            res.send(result)
+        })
 
 
         // Send a ping to confirm a successful connection
