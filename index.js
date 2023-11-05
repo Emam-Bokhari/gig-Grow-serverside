@@ -51,6 +51,15 @@ async function run() {
         })
 
 
+        // get :: (job-details)
+        app.get("/api/v1/:jobId/job-details", async (req, res) => {
+            const jobId = req.params.jobId
+            const query = { _id: new ObjectId(jobId) }
+            const result = await jobCollection.findOne(query)
+            res.send(result)
+        })
+
+
         // post :: (add-job)
         app.post("/api/v1/add-job", async (req, res) => {
             const addJob = req.body
