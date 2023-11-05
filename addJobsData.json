@@ -1,0 +1,497 @@
+[
+    {
+      "jobTitle": "Mern and Vue Js Developer",
+      "category":"Web Development",
+      "deadline": "2023-12-31",
+      "description": "I want to build a web application which will be a web application based on eCommerce. Requiremets: User Registration and Authentication:
+
+      User registration and login for customers and sellers.
+      Secure authentication and password recovery mechanisms.
+      Product Catalog:
+      
+      An organized product catalog with categories and filters.
+      Detailed product pages with images, descriptions, and specifications.
+      Product search functionality.
+      Shopping Cart:
+      
+      A virtual shopping cart to add and manage selected items.
+      Real-time cart updates and the ability to change quantities.
+      Cart abandonment reminders.
+      Checkout Process:
+      
+      Secure and user-friendly checkout process.
+      Multiple payment options, including credit cards, digital wallets, and more.
+      Shipping and delivery options with real-time tracking.
+      Order Management:
+      
+      Order history and tracking for customers.
+      Order processing and management tools for sellers.
+      Email notifications for order status updates.
+      Product Reviews and Ratings:
+      
+      Customer reviews and ratings for products.
+      Ability to leave feedback and comments.
+      User Profiles:
+      
+      User profiles with order history and personal information.
+      Wishlist and favorites functionality.
+      Inventory Management:
+      
+      Inventory tracking for sellers.
+      Automatic stock level updates.
+      Admin Dashboard:
+      
+      A powerful admin dashboard for managing products, users, orders, and inventory.
+      Reporting and analytics tools to track sales and performance.
+      Security and Payment Gateway:
+      
+      Secure, encrypted connections (HTTPS).
+      Integration with reputable payment gateways for safe transactions.
+      Responsive Design:
+      
+      Mobile-friendly design for a seamless experience on various devices.
+      Search and Filters:
+      
+      Advanced search options and filters to help users find products easily.
+      Customer Support:
+      
+      Live chat, contact forms, or support tickets for customer assistance.
+      Marketing and Promotion:
+      
+      Discounts, coupons, and promotional tools.
+      Email marketing and newsletters.
+      Social Media Integration:
+      
+      Sharing and social media links to promote products.
+      Product Recommendations:
+      
+      AI-powered product recommendations based on user behavior.
+      Multilingual and Multi-currency Support:
+      
+      Support for different languages and currencies for a global audience.
+      Reviews and Ratings:
+      
+      Customer reviews and product ratings to build trust.
+      Returns and Refunds:
+      
+      A clear policy for returns and refunds with a streamlined process.
+      GDPR and Privacy Compliance:
+      
+      Compliance with data protection regulations to protect user privacy. ",
+      "category": "Web Development",
+      "minimumPrice": 5000,
+      "maximumPrice": 10000
+    },
+    {
+      "jobTitle": "Mern Stack Developer",
+      "category":"Web Development",
+      "deadline": "2023-11-15",
+      "description": "Requirements: 
+      User Authentication and Access Control:
+
+      Secure login for healthcare staff, administrators, and patients.
+      Role-based access control to restrict access to specific functionalities.
+      Patient Management:
+      
+      Registration and admission of patients.
+      Electronic health records (EHR) for each patient.
+      Appointment scheduling and tracking.
+      Appointment and Scheduling:
+      
+      Booking and managing appointments for patients.
+      Real-time availability and automated reminders.
+      Doctor and Staff Management:
+      
+      Profiles for doctors and staff with their specialties and availability.
+      Shift and duty scheduling.
+      Medical Records and EMR:
+      
+      Electronic medical records (EMR) for patients.
+      Secure storage and retrieval of medical history, test results, and prescriptions.
+      Billing and Invoicing:
+      
+      Generation of invoices and billing statements.
+      Integration with insurance providers for claims processing.
+      Pharmacy Management:
+      
+      Inventory control for medications and medical supplies.
+      Prescription management and tracking.
+      Laboratory and Test Management:
+      
+      Requesting and tracking laboratory tests.
+      Automated test results storage and retrieval.
+      Radiology and Imaging:
+      
+      Managing radiology and imaging requests and results.
+      Integration with imaging equipment for digital storage.
+      Ward and Bed Management:
+      
+      Tracking the availability and occupancy of hospital beds.
+      Assignment of patients to appropriate wards.
+      Inventory Management:
+      
+      Inventory control for medical equipment and supplies.
+      Automatic reordering when supplies are low.
+      Pharmaceutical Inventory:
+      
+      Managing pharmaceutical stock and expiry dates.
+      Tracking drug usage and restocking.
+      Billing and Insurance Management:
+      
+      Integration with insurance providers for claims processing.
+      Generation of insurance claims and tracking their status.
+      Reports and Analytics:
+      
+      Generate reports on hospital performance, financials, and patient statistics.
+      Data analytics for improving hospital operations.
+      SMS and Email Notifications:
+      
+      Send automated appointment reminders and notifications.
+      Communication with patients and staff.
+      Telemedicine Integration:
+      
+      Support for telehealth consultations and video appointments.
+      Security and Compliance:
+      
+      Ensure HIPAA or relevant healthcare data protection compliance.
+      Data encryption and access controls.
+      Emergency Management:
+      
+      Quick access to emergency contacts and procedures.
+      Mass communication in case of emergencies.
+      Patient Portal:
+      
+      Allow patients to access their records, schedule appointments, and communicate with healthcare providers.
+      Mobile-Friendly Design:
+      
+      Ensure that the web application is responsive for use on mobile devices.",
+      "category": "Web Development",
+      "minimumPrice": 3000,
+      "maximumPrice": 8000
+    },
+    {
+      "jobTitle": "Full Stack Developer",
+      "category":"Web Development",
+      "deadline": "2023-12-10",
+      "description": "
+      I want a web developer to create a cooperative society Web Application.
+      Requirements: ,
+
+      Secure login for members, administrators, and staff.
+      Role-based access control to manage permissions.
+      Member Registration and Profiles:
+      
+      Member registration and profile management.
+      Personal details, contact information, and membership status.
+      Announcements and Notifications:
+      
+      Post important society announcements and notifications.
+      Send email or SMS alerts to members.
+      Event Management:
+      
+      Create, manage, and promote society events.
+      Event registration and RSVP functionality.
+      Meeting Scheduling and Minutes:
+      
+      Schedule society meetings and maintain a calendar.
+      Store and distribute minutes of past meetings.
+      Financial Management:
+      
+      Accounting and financial tracking for membership dues and fees.
+      Generate financial reports and statements.
+      Document Repository:
+      
+      Store and manage important society documents, bylaws, and policies.
+      Version control and document access logs.
+      Member Communication:
+      
+      Messaging and communication tools for members and administrators.
+      Chat or discussion forums for member interaction.
+      Voting and Decision-Making:
+      
+      Conduct online voting for important decisions and elections.
+      Maintain voting records and results.
+      Committee Management:
+      
+      Create and manage various committees within the society.
+      Assign members to committees and track their progress.
+      Membership Renewal and Enrollment:
+      
+      Online membership renewal and enrollment processes.
+      Automated reminders for renewals.
+      Asset and Property Management:
+      
+      Track society-owned assets and properties.
+      Maintenance and inventory records.
+      Privacy and Data Security:
+      
+      Ensure member data privacy and compliance with relevant regulations.
+      Data encryption and access controls.
+      Mobile Accessibility:
+      
+      Ensure that the web application is responsive for mobile use.
+      Native mobile app development for enhanced mobile functionality.
+      Reports and Analytics:
+      
+      Generate reports on membership statistics, finances, and activities.
+      Data analytics for decision support.
+      Feedback and Suggestions:
+      
+      Collect feedback and suggestions from members.
+      Online suggestion box or feedback forms.
+      Emergency Contacts and Procedures:
+      
+      Quick access to emergency contacts and procedures.
+      Mass communication in case of emergencies.
+      Directory and Contacts:
+      
+      Maintain a directory of members and contacts.
+      Search and filter options for easy access.
+      Integration with Payment Gateways:
+      
+      Accept online payments for dues and fees.
+      Provide payment history and receipts.
+      Help and Support Center:
+      
+      Provide resources and support for members.
+      Helpdesk or ticketing system for member inquiries.",
+      "category": "Web Development",
+      "minimumPrice": 2000,
+      "maximumPrice": 6000
+    },
+    {
+      "jobTitle": "Java Developer and Web socket expertise ",
+      "deadline": "2023-11-30",
+      "description": "
+      I want a full stack developer for socail media web application build.  Especially one who can work on Web socket.
+      User Registration and Profiles:
+ 
+      Requirements:
+      User registration and profile setup with professional details.
+      Options to link to LinkedIn profiles or business websites.
+      Connection Management:
+      
+      Ability to connect with other professionals or businesses.
+      Follow, friend, or connection requests.
+      News Feed and Activity Stream:
+      
+      A news feed displaying posts, updates, and activities of connections.
+      Option to share business updates, articles, and events.
+      Groups and Communities:
+      
+      Create or join industry-specific groups and communities.
+      Discussion forums and knowledge-sharing spaces.
+      Messaging and Communication:
+      
+      Private messaging for one-on-one communication.
+      Group messaging for collaboration and discussions.
+      Business Pages and Profiles:
+      
+      Business profile pages with company information, products, and services.
+      Verification for authentic businesses.
+      Content Sharing:
+      
+      Ability to share articles, images, videos, and other content.
+      Support for sharing blog posts, whitepapers, and presentations.
+      Event Management:
+      
+      Create and promote business events, webinars, or conferences.
+      Event registration and ticketing options.
+      Analytics and Insights:
+      
+      Business-specific analytics for post performance and engagement.
+      Tracking of connections and audience demographics.
+      Blogging and Publishing:
+      
+      Blogging tools for publishing articles and insights.
+      Content creation and distribution.
+      Recommendations and Testimonials:
+      
+      Ability to receive and display recommendations and testimonials.
+      Endorsements from connections.
+      Job Listings and Recruitment:
+      
+      Post and search for job listings or freelancers.
+      Resume submission and applicant tracking.
+      Business Directory:
+      
+      A directory of businesses and professionals within the network.
+      Search and filter options for easy access.
+      Privacy and Data Control:
+      
+      Customizable privacy settings for posts and connections.
+      Control over data sharing and visibility.
+      Advertising and Promotions:
+      
+      Sponsored content and advertising options for businesses.
+      Targeted advertising to reach specific audiences.
+      Mobile Accessibility:
+      
+      Ensure that the web application is mobile-friendly.
+      Native mobile app development for enhanced mobile functionality.
+      Support and Help Center:
+      
+      Provide support resources and assistance for businesses.
+      Helpdesk or ticketing system for inquiries.
+      Search and Discovery:
+      
+      Powerful search and discovery features to find connections, content, and businesses.
+      Security and Data Protection:
+      
+      Ensure data security and compliance with relevant regulations.
+      Data encryption and access controls.
+      Integration with Business Tools:
+      
+      Integration with CRM systems, email marketing, and other business tools.
+      Streamline business processes.",
+      "category": "Web Development",
+      "minimumPrice": 1000,
+      "maximumPrice": 4000
+    }
+  ]
+
+
+  [
+    {
+        "jobTitle":"Logo Design",
+        "category":"Graphic Design",
+        "description":"Simplicity:
+
+        Keep the design clean and uncluttered. Simple logos are more recognizable and versatile.
+        Relevance:
+
+Ensure that the logo reflects the nature and values of your company or business.
+Uniqueness:
+
+Your logo should stand out and be distinct from competitors.
+Versatility:
+
+Your logo should look good and be functional in various sizes and formats, from business cards to billboards.
+Color Scheme:
+
+Choose a color palette that represents your brand and conveys the desired emotions or message.
+Typography:
+
+Consider the choice of fonts and how they complement the overall design.
+Originality:
+
+Avoid using stock images or clichéd symbols. Create a logo that's uniquely yours.
+        "
+    },
+    {
+        "jobTitle":"Book Cover Design",
+        "category":"Graphic Design",
+        "description":"Title and Author Name: The title and author's name should be prominently displayed on the book cover in a readable and attractive font.
+
+        Imagery: Use a captivating and relevant image or illustration that complements the book's content. This image can pique the reader's interest.
+        
+        Color Scheme: Choose an attractive color scheme that best represents the book's genre and mood. Ensure that the colors harmonize well.
+        
+        Typography: Carefully select the fonts for the title, author's name, and other text elements. The title and subtitle should have larger fonts, while other text should remain readable.
+        
+        Layout: Maintain a balanced and organized layout for the book cover. Properly arrange the elements and use negative space to avoid clutter.
+        
+        Relevance: The book cover's design should resonate with the book's plot, theme, and genre.
+        
+        Target Audience: Keep your book's target audience in mind when designing the cover, considering their preferences and expectations.
+        
+        Branding: If the author has a personal branding, consider incorporating branding elements like a logo, color scheme, or specific typography.
+        
+        Spine and Back Cover: For hardcover books, remember to design the spine and back cover, featuring the title, author's name, and publisher's logo on the spine.
+        
+        Mockup Testing: Evaluate the book cover design by visualizing it in different sizes and formats, considering both print quality and digital displays."
+    },
+    {
+        "jobTitle":"Weeding Card Design",
+        "category":"Graphic Design",
+        "description":"Theme and Style: Decide on the theme and style of the wedding card. Whether it's traditional, modern, rustic, vintage, or a combination, the theme sets the overall tone of the design.
+
+        Color Palette: Choose a color scheme that aligns with the wedding theme and the couple's preferences. Colors can evoke emotions and set the mood for the event.
+        
+        Typography: Select fonts that match the chosen theme and are easy to read. Use different fonts for headings and body text to create a visual hierarchy.
+        
+        Personalization: Add personalized elements like the couple's names, wedding date, and a meaningful quote or message. Personal touches make the card special.
+        
+        Images and Illustrations: Incorporate images or illustrations that reflect the couple's story, such as engagement photos or custom illustrations. These visuals add a personal touch.
+        
+        Layout and Composition: Create a well-organized layout with a clear visual hierarchy. Arrange the text, images, and design elements in an aesthetically pleasing way.
+        
+        Whitespace: Use white space effectively to ensure the design isn't cluttered. Adequate white space improves readability and visual appeal.
+        
+        Size and Format: Determine the size and format of the wedding card, whether it's a traditional folded card, a single-sided design, or something unique. Consider envelope size and postage requirements."
+    },
+    {
+        {
+            "jobTitle":"Banner Design",
+            "category":"Graphic Design",
+            "description":"Size and Dimensions: Know the exact dimensions and size requirements for the banner, whether it's for print or digital use. Common banner sizes include web banners, billboards, and trade show displays.
+
+            Visual Hierarchy: Create a clear visual hierarchy with the most important information or message being the most prominent. Use size, color, and typography to guide viewers' attention.
+            
+            Color Scheme: Choose a color scheme that aligns with the brand or the message you want to convey. Colors can evoke emotions and set the tone.
+            
+            Typography: Select fonts that are easy to read, match the brand, and are suitable for the purpose of the banner. Ensure consistency in font choices.
+            
+            Imagery: Incorporate relevant and high-quality images or graphics that complement the message. Use visuals that enhance the design and draw attention.
+            
+            Simplicity: Keep the design clean and uncluttered. Avoid overcrowding with too much text or visuals. Focus on a simple and impactful message.
+            
+            Contrast: Utilize contrast to make important elements stand out. This can be achieved through color contrast, font styles, and image placement.
+            
+            Whitespace: Use white space effectively to create balance and improve readability. It can make the design look more appealing.
+            
+            Branding: Incorporate the brand's logo, colors, and other visual elements to maintain consistency and reinforce brand identity.
+            
+            Call to Action (CTA): Include a clear and compelling CTA that tells the audience what action to take. It could be or any other relevant action.
+            
+            Alignment: Maintain consistent alignment of text and elements to create a polished and professional look.
+            
+            Resolution and Quality: Ensure that images and graphics used in the design are of high resolution to maintain visual quality, especially for large-format prints.
+            
+            Mobile Responsiveness: If the banner will be used on websites or digital platforms, make sure it's responsive and looks good on various screen sizes.
+            
+            Testing: Test the design on different platforms and devices to ensure it looks as intended. Check for any technical issues like pixelation."
+        }
+    }
+  ]
+
+  [
+    {
+        "jobTitle":"Banner Design",
+            "category":"Digital Marketing",
+            "description":"Size"
+    }
+  ]
+  
+
+
+
+  [
+    {
+      "jobTitle":"full stack",
+      "deadline":"11-05-23",
+      "description":"loremIpsum",
+      "category":"Web Development",
+      "email":"studentemam@gmail.com",
+      "minimumPrice":300,
+      "maximumPrice":700
+    },
+    {
+      "jobTitle":"mern stack",
+      "deadline":"11-05-23",
+      "description":"LoremIpsum",
+      "category":"Web Development",
+      "email":"studentemam@gmail.com",
+      "minimumPrice":200,
+      "maximumPrice":900
+    },
+    {
+      "jobTitle":"Graphics",
+      "deadline":"11-05-23",
+      "description":"loremIpsum",
+      "category":"Graphics Design",
+      "email":"abc@gmail.com",
+      "minimumPrice":100,
+      "maximumPrice":500
+    }
+  ]
