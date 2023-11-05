@@ -119,6 +119,14 @@ async function run() {
             res.send(result)
         })
 
+        
+        // get :: (bid-req) (vol houar somvhabona ase)
+        app.get("/api/v1/bid-request", async (req, res) => {
+            const result = await bidsCollection.find().toArray()
+            res.send(result)
+        })
+
+
 
         // post :: (bid-on-the-project)
         app.post("/api/v1/bid-on-the-project", async (req, res) => {
