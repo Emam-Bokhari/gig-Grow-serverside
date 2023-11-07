@@ -1,87 +1,5 @@
 [
-    {
-      "jobTitle": "Mern and Vue Js Developer",
-      "category":"Web Development",
-      "deadline": "2023-12-31",
-      "description": "I want to build a web application which will be a web application based on eCommerce. Requiremets: User Registration and Authentication:
-
-      User registration and login for customers and sellers.
-      Secure authentication and password recovery mechanisms.
-      Product Catalog:
-      
-      An organized product catalog with categories and filters.
-      Detailed product pages with images, descriptions, and specifications.
-      Product search functionality.
-      Shopping Cart:
-      
-      A virtual shopping cart to add and manage selected items.
-      Real-time cart updates and the ability to change quantities.
-      Cart abandonment reminders.
-      Checkout Process:
-      
-      Secure and user-friendly checkout process.
-      Multiple payment options, including credit cards, digital wallets, and more.
-      Shipping and delivery options with real-time tracking.
-      Order Management:
-      
-      Order history and tracking for customers.
-      Order processing and management tools for sellers.
-      Email notifications for order status updates.
-      Product Reviews and Ratings:
-      
-      Customer reviews and ratings for products.
-      Ability to leave feedback and comments.
-      User Profiles:
-      
-      User profiles with order history and personal information.
-      Wishlist and favorites functionality.
-      Inventory Management:
-      
-      Inventory tracking for sellers.
-      Automatic stock level updates.
-      Admin Dashboard:
-      
-      A powerful admin dashboard for managing products, users, orders, and inventory.
-      Reporting and analytics tools to track sales and performance.
-      Security and Payment Gateway:
-      
-      Secure, encrypted connections (HTTPS).
-      Integration with reputable payment gateways for safe transactions.
-      Responsive Design:
-      
-      Mobile-friendly design for a seamless experience on various devices.
-      Search and Filters:
-      
-      Advanced search options and filters to help users find products easily.
-      Customer Support:
-      
-      Live chat, contact forms, or support tickets for customer assistance.
-      Marketing and Promotion:
-      
-      Discounts, coupons, and promotional tools.
-      Email marketing and newsletters.
-      Social Media Integration:
-      
-      Sharing and social media links to promote products.
-      Product Recommendations:
-      
-      AI-powered product recommendations based on user behavior.
-      Multilingual and Multi-currency Support:
-      
-      Support for different languages and currencies for a global audience.
-      Reviews and Ratings:
-      
-      Customer reviews and product ratings to build trust.
-      Returns and Refunds:
-      
-      A clear policy for returns and refunds with a streamlined process.
-      GDPR and Privacy Compliance:
-      
-      Compliance with data protection regulations to protect user privacy. ",
-      "category": "Web Development",
-      "minimumPrice": 5000,
-      "maximumPrice": 10000
-    },
+    
     {
       "jobTitle": "Mern Stack Developer",
       "category":"Web Development",
@@ -352,32 +270,7 @@
 
 
   [
-    {
-        "jobTitle":"Logo Design",
-        "category":"Graphic Design",
-        "description":"Simplicity:
 
-        Keep the design clean and uncluttered. Simple logos are more recognizable and versatile.
-        Relevance:
-
-Ensure that the logo reflects the nature and values of your company or business.
-Uniqueness:
-
-Your logo should stand out and be distinct from competitors.
-Versatility:
-
-Your logo should look good and be functional in various sizes and formats, from business cards to billboards.
-Color Scheme:
-
-Choose a color palette that represents your brand and conveys the desired emotions or message.
-Typography:
-
-Consider the choice of fonts and how they complement the overall design.
-Originality:
-
-Avoid using stock images or clichéd symbols. Create a logo that's uniquely yours.
-        "
-    },
     {
         "jobTitle":"Book Cover Design",
         "category":"Graphic Design",

@@ -8,16 +8,17 @@ const app = express()
 
 // middleware
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: ["http://localhost:5173"],
+    credentials: true
+
+}))
 app.use(cookieParser())
 
-// username and passwod
-// gigGrow
-// 23BItNYL3Cl2VJFr
 
 // mongodb database connection
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
-const uri = "mongodb+srv://gigGrow:23BItNYL3Cl2VJFr@cluster0.kndeci6.mongodb.net/?retryWrites=true&w=majority";
+const uri = `mongodb+srv://${process.env.USERS_DB}:${process.env.DB_PASS}@cluster0.kndeci6.mongodb.net/?retryWrites=true&w=majority`;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -39,15 +40,28 @@ async function run() {
         const bidsCollection = database.collection("bidsCollection")
 
 
+        // jwt 
+        app.post("/jwt", async (req, res) => {
+            const user = req.body
+            // console.log(user);
+            const token = jwt.sign(user, process.env.ACCESS_TOKEN, {
+                expiresIn: '1h'
+            })
+            res
+            .cookie('token', token, {
+            httpOnly: true,
+            secure: false
+            })
+            res.send({success:true})
+        })
+
+
         // jobCollection
         // get :: (specefic job category)
         app.get("/api/v1/job-category", async (req, res) => {
-            let query = {}
-            if (req.query.category) {
-                query = { category: req.query.category }
-            }
-            const result = await jobCollection.find(query).toArray()
+            const result = await jobCollection.find().toArray()
             res.send(result)
+
         })
 
 
@@ -86,6 +100,7 @@ async function run() {
             const updatePostedJob = req.body
             const postedJob = {
                 $set: {
+                    email: updatePostedJob.email,
                     jobTitle: updatePostedJob.jobTitle,
                     deadline: updatePostedJob.deadline,
                     description: updatePostedJob.description,
@@ -108,21 +123,28 @@ async function run() {
         })
 
 
+
         // bidsCollection
         // get :: (my-bids, user based)
         app.get("/api/v1/my-bids", async (req, res) => {
             let query = {}
-            if (req.query.email) {
-                query = { email: req.query.email }
+            if (req.query.biddingEmail) {
+                query = { biddingEmail: req.query.biddingEmail }
             }
+            // console.log(req.query.biddingEmail);
             const result = await bidsCollection.find(query).toArray()
             res.send(result)
         })
 
-        
+
         // get :: (bid-req) (vol houar somvhabona ase)
         app.get("/api/v1/bid-request", async (req, res) => {
-            const result = await bidsCollection.find().toArray()
+            let query = {}
+            if (req.query.clientEmail) {
+                query = { clientEmail: req.query.clientEmail }
+            }
+            // console.log(req.query.clientEmail);
+            const result = await bidsCollection.find(query).toArray()
             res.send(result)
         })
 
