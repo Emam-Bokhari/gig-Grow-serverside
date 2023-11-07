@@ -29,6 +29,25 @@ const client = new MongoClient(uri, {
     }
 });
 
+
+// create middleware
+const verifyToken = async (req, res, next) => {
+    const token = req.cookies?.token
+    // console.log(token);
+    if (!token) {
+      return res.status(401).send({ message: 'unathorized', status: 401 })
+    }
+    jwt.verify(token, process.env.ACCESS_TOKEN, (err, decoded) => {
+      if (err) {
+        return res.status(401).send({ message: 'unathorized' })
+      }
+      req.user = decoded
+      next()
+    })
+  }
+
+
+
 async function run() {
     try {
         // Connect the client to the server	(optional starting in v4.7)
@@ -75,7 +94,14 @@ async function run() {
 
 
         // get :: (my-posted-job, user based )
-        app.get("/api/v1/my-posted-jobs", async (req, res) => {
+        app.get("/api/v1/my-posted-jobs",verifyToken, async (req, res) => {
+            // console.log(req.query.email);
+            // console.log(req.user.email);
+
+            if (req.query.email !== req.user.email) {
+                return res.status(403).send({ message: 'forbidden' })
+              }
+
             let query = {}
             if (req.query.email) {
                 query = { email: req.query.email }
@@ -86,8 +112,12 @@ async function run() {
 
 
         // post :: (add-job)
-        app.post("/api/v1/add-job", async (req, res) => {
+        app.post("/api/v1/add-job",verifyToken, async (req, res) => {
             const addJob = req.body
+            // console.log(addJob);
+            if (addJob.email !== req.user.email) {
+                return res.status(403).send({ message: 'forbidden' })
+              }
             const result = await jobCollection.insertOne(addJob)
             res.send(result)
         })
@@ -126,7 +156,12 @@ async function run() {
 
         // bidsCollection
         // get :: (my-bids, user based)
-        app.get("/api/v1/my-bids", async (req, res) => {
+        app.get("/api/v1/my-bids",verifyToken, async (req, res) => {
+
+            if (req.query.biddingEmail !== req.user.email) {
+                return res.status(403).send({ message: 'forbidden' })
+              }
+
             let query = {}
             if (req.query.biddingEmail) {
                 query = { biddingEmail: req.query.biddingEmail }
@@ -138,7 +173,12 @@ async function run() {
 
 
         // get :: (bid-req) (vol houar somvhabona ase)
-        app.get("/api/v1/bid-request", async (req, res) => {
+        app.get("/api/v1/bid-request",verifyToken, async (req, res) => {
+
+            if (req.query.clientEmail !== req.user.email) {
+                return res.status(403).send({ message: 'forbidden' })
+              }
+
             let query = {}
             if (req.query.clientEmail) {
                 query = { clientEmail: req.query.clientEmail }
@@ -151,8 +191,14 @@ async function run() {
 
 
         // post :: (bid-on-the-project)
-        app.post("/api/v1/bid-on-the-project", async (req, res) => {
+        app.post("/api/v1/bid-on-the-project",verifyToken, async (req, res) => {
             const bidOnTheProject = req.body
+
+            if (bidOnTheProject.biddingEmail !== req.user.email) {
+                return res.status(403).send({ message: 'forbidden' })
+              }
+
+            // console.log(bidOnTheProject);
             const result = await bidsCollection.insertOne(bidOnTheProject)
             res.send(result)
         })
