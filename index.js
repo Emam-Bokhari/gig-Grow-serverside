@@ -9,7 +9,7 @@ const app = express()
 // middleware
 app.use(express.json())
 app.use(cors({
-    origin: ["http://localhost:5173"],
+    origin: ["https://gig-grow.web.app"],
     credentials: true
 
 }))
@@ -172,7 +172,7 @@ async function run() {
         })
 
 
-        // get :: (bid-req) (vol houar somvhabona ase)
+        // get :: (bid-req, user based) 
         app.get("/api/v1/bid-request",verifyToken, async (req, res) => {
 
             if (req.query.clientEmail !== req.user.email) {
